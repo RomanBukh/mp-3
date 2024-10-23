@@ -14,7 +14,18 @@ const StyledDiv = styled.div`
     border-color: red;
 `
 
-function reducer(state, action) {
+interface State {
+    firstNumber: number | string;
+    secondNumber: number | string;
+    res: number | string | null;
+}
+
+interface Action {
+    type : string;
+    payload: string | number;
+}
+
+function reducer(state: State, action: Action) {
     switch(action.type){
         case 'UPDATE_FIRST':
             return {

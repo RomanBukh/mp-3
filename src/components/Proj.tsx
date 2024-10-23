@@ -1,8 +1,7 @@
 import Main from "./Main";
 import { useEffect  } from "react";
 import { TitleProps } from "../interfaces/TitleProps.ts";
-//@ts-ignore
-import Calc from "./Calculator.jsx"
+import Calc from "./Calculator.tsx"
 
 export default function Proj({setTitle}: TitleProps){
     useEffect(() => {
