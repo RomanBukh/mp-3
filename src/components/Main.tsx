@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactNode } from "react";
 
 const MainWrapper = styled.div`
     display: flex;
@@ -7,10 +8,13 @@ const MainWrapper = styled.div`
     height: auto;
     align-items: center;
     margin: 1% 10% 0%;
-
 `
 
-const Main = ({children}) => {
+interface ChildProp {
+    children: ReactNode;
+}
+
+const Main = ({children}: ChildProp) => {
     return(
         <MainWrapper>
             {children}

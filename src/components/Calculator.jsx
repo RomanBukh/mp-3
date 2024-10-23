@@ -14,7 +14,6 @@ const StyledDiv = styled.div`
     border-color: red;
 `
 
-
 function reducer(state, action) {
     switch(action.type){
         case 'UPDATE_FIRST':
