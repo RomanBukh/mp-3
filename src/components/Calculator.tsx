@@ -15,9 +15,9 @@ const StyledDiv = styled.div`
 `
 
 interface State {
-    firstNumber: number | string;
-    secondNumber: number | string;
-    res: number | string | null;
+    firstNumber: number;
+    secondNumber: number;
+    res: number | null;
 }
 
 interface Action {
